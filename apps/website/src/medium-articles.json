@@ -1,0 +1,42 @@
+[
+  {
+    "id": "e98d3c848e1",
+    "title": "Recoil to the Rescue",
+    "date": "2022-12-16 22:17:54",
+    "url": "https://medium.com/@gdurant34/recoil-to-the-rescue-e98d3c848e1",
+    "image": "https://miro.medium.com/0*AoNumdHOUJjpSEhD",
+    "userId": "5a6200a68c73",
+    "author": "Grace Durant",
+    "blurb": "Throughout my last few projects, I used useState to manage the different states I was tracking in my app. My apps continually had way too many props passed to and through the components. Because of"
+  },
+  {
+    "id": "b7c9014b9f04",
+    "title": "GitHub Project Workflow for Multiple Collaborators",
+    "date": "2022-11-28 21:48:27",
+    "url": "https://medium.com/@gdurant34/github-project-workflow-for-multiple-collaborators-b7c9014b9f04",
+    "image": "https://miro.medium.com/1*PiEH4_HYy-g4s47z35jFNA.jpeg",
+    "userId": "5a6200a68c73",
+    "author": "Grace Durant",
+    "blurb": "Now into phase 4 of my Bootcamp and I have collaborated with a few people on projects. We are given suggestions for things to do when working on projects, but no clear workflow to follow so with each"
+  },
+  {
+    "id": "3da6354637c7",
+    "title": "Working with numbers in ReactJS",
+    "date": "2022-11-04 20:29:49",
+    "url": "https://medium.com/@gdurant34/working-with-numbers-in-reactjs-3da6354637c7",
+    "image": "https://miro.medium.com/1*rLs3KeF8lYr78rEjhQE2-w.jpeg",
+    "userId": "5a6200a68c73",
+    "author": "Grace Durant",
+    "blurb": "How I utilized an external package to make it easier I recently finished phase two of the Software Engineering Bootcamp I am going through. The project I took on for the ReactJS potions was an app for saving"
+  },
+  {
+    "id": "2e53f74a4c31",
+    "title": "“Build and Burn”",
+    "date": "2022-10-14 09:33:18",
+    "url": "https://medium.com/@gdurant34/build-and-burn-2e53f74a4c31",
+    "image": "https://miro.medium.com/1*kR0llmsWa1hlwzYffapOOQ.jpeg",
+    "userId": "5a6200a68c73",
+    "author": "Grace Durant",
+    "blurb": "How I used repetition to pass my first BootCamp code challenge — I am currently a student in the Flatiron Software Engineering coding boot camp. I just completed phase one and now that I have successfully survived that, I want to share one of the things that was helpful for me in that process. Build and burn. What is build and burn"
+  }
+]

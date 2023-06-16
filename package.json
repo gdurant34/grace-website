@@ -2,7 +2,10 @@
   "name": "grace-website",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx serve website",
+    "build": "nx build website"
+  },
   "private": true,
   "dependencies": {
     "@mui/material": "^5.13.0",

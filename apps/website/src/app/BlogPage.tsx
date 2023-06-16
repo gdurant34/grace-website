@@ -1,40 +1,73 @@
 import { Card } from '@grace-website/components';
+import { useEffect, useState } from 'react';
+import articles from '../medium-articles.json';
 
 const Blog = ({ title }: { title: string }) => {
+  const [posts, setPosts] = useState<any[]>([]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        // This is what we use to fetch things when we want to use the API key
+        // const userID = await fetch(
+        //   `https://medium2.p.rapidapi.com/user/id_for/${username}`,
+        //   { headers: { 'X-RapidAPI-Key': MEDIUM_API_KEY } }
+        // )
+        //   .then((r) => r.json())
+        //   .then((r) => r.id);
+        //
+        // const articleIDs = await fetch(
+        //   `https://medium2.p.rapidapi.com/user/${userID}/articles`,
+        //   { headers: { 'X-RapidAPI-Key': MEDIUM_API_KEY } }
+        // )
+        //   .then((r) => r.json())
+        //   .then((r) => r.associated_articles);
+        //
+        // const getArticle = async (articleId: string) =>
+        //   await fetch(`https://medium2.p.rapidapi.com/article/${articleId}`, {
+        //     headers: { 'X-RapidAPI-Key': MEDIUM_API_KEY },
+        //   })
+        //     .then((r) => r.json())
+        //     .then((r) => ({
+        //       id: r.id,
+        //       title: r.title,
+        //       date: r.published_at,
+        //       url: r.url,
+        //       image: r.image_url,
+        //     }));
+        //
+        // const articles = await Promise.all(
+        //   articleIDs.map((articleId: string) => getArticle(articleId))
+        // );
+
+        setPosts(articles);
+      } catch (e) {}
+    })();
+  }, []);
+
+  const renderArticles = () => {
+    return posts.map((article) => (
+      <Card
+        key={article.id}
+        title={article.title}
+        name={article.author}
+        date={article.date}
+        image={article.image}
+        link={article.url}
+        description={article.blurb + '...'}
+      />
+    ));
+  };
+
   return (
     <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-screen p-1.5">
-      <img 
-      src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
-      alt=''
-      className='w-full h-full object-cover absolute mix-blend-overlay opacity-90'/>
+      <img
+        src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
+        alt=""
+        className="w-full h-full object-cover absolute mix-blend-overlay opacity-90"
+      />
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
-        <div>
-          <Card
-            title="GitHub Project Workflow for Multiple Collaborators"
-            name="Grace Durant"
-            date="Nov 28, 2022"
-            image="/assets/images/blogGitWorkflow.jpg"
-            description="I wrote this blog to articulate the Git workflow for when there
-            are multiple contributors. I noticed when I was collaborating
-            with other students I always ended up was teaching them the
-            workflow. I wanted to make it more accessible for the other
-            students in my cohort. They found it really helpful, so I wanted
-            to share it here as well."
-          />
-          <Card
-            title="Recoil to the Rescue"
-            name="Grace Durant"
-            date="Dec 16, 2022"
-            image="/assets/images/blogRecoil.jpg"
-            description="Throughout my last few projects, I used useState to manage the
-            different states I was tracking in my app. My apps continually
-            had way too many props passed to and through the components.
-            Because of this, I called my last several projects “prop happy.”
-            Entering my final project for Bootcamp, I am taking a different
-            approach. Enter Recoil. Recoil is a state management library for
-            React."
-          />
-        </div>
+        <div>{renderArticles()}</div>
       </div>
     </div>
   );
