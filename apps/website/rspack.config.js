@@ -1,4 +1,4 @@
-const { composePlugins, withNx, withWeb } = require("@nx/rspack");
+const { composePlugins, withNx, withWeb } = require('@nx/rspack');
 
 module.exports = composePlugins(withNx(), withWeb(), (config) => {
   config.module.rules.push({
@@ -9,6 +9,9 @@ module.exports = composePlugins(withNx(), withWeb(), (config) => {
       },
     ],
     type: 'css',
-  })
+  });
+  config.devServer = {
+    historyApiFallback: true,
+  };
   return config;
 });
