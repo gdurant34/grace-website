@@ -1,39 +1,41 @@
 import { Card } from '@grace-website/components';
+import { useEffect, useState } from 'react';
+import articles from '../medium-articles.json';
 
 const Blog = ({ title }: { title: string }) => {
+  const [post, setPost] = useState<any[]>([]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        setPost(articles);
+      } catch (e) {}
+    }) ();
+  },[]);
+
+  const renderArticles = () => {
+    return post.map((article) => (
+      <Card 
+      key={article.id}
+      name={article.author}
+      date={article.date}
+      title={article.title}
+      image={article.image}
+      description={article.blurb}
+      link={article.url}
+      />
+    ))
+  }
+
   return (
-    <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-screen p-1.5">
+    <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-fit ">
       <img 
       src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
       alt=''
-      className='w-full h-full object-cover absolute mix-blend-overlay opacity-90'/>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+      className='w-full h-fit object-cover absolute mix-blend-overlay opacity-90'/>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 ">
         <div>
-          <Card
-            title="GitHub Project Workflow for Multiple Collaborators"
-            name="Grace Durant"
-            date="Nov 28, 2022"
-            image="/assets/images/blogGitWorkflow.jpg"
-            description="I wrote this blog to articulate the Git workflow for when there
-            are multiple contributors. I noticed when I was collaborating
-            with other students I always ended up was teaching them the
-            workflow. I wanted to make it more accessible for the other
-            students in my cohort. They found it really helpful, so I wanted
-            to share it here as well."
-          />
-          <Card
-            title="Recoil to the Rescue"
-            name="Grace Durant"
-            date="Dec 16, 2022"
-            image="/assets/images/blogRecoil.jpg"
-            description="Throughout my last few projects, I used useState to manage the
-            different states I was tracking in my app. My apps continually
-            had way too many props passed to and through the components.
-            Because of this, I called my last several projects “prop happy.”
-            Entering my final project for Bootcamp, I am taking a different
-            approach. Enter Recoil. Recoil is a state management library for
-            React."
-          />
+          {renderArticles()}
         </div>
       </div>
     </div>
