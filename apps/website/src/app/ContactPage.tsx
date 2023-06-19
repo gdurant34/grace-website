@@ -1,3 +1,4 @@
+import { EmailForm } from '@grace-website/components';
 
 const AboutMe = ({ title }: { title: string }) => {
   return (
@@ -8,7 +9,7 @@ const AboutMe = ({ title }: { title: string }) => {
         className="w-full h-full z-0 object-cover absolute mix-blend-overlay opacity-90"
       />
       <div className="p-12 text-center">
-      {/* <div className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"> */}
+        {/* <div className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"> */}
         <div className="flex items-center justify-center">
           <div className="relative z-10">
             <h1 className="mb-4 text-5xl font-semibold text-amber-900 text-opacity-70">
@@ -42,13 +43,22 @@ const AboutMe = ({ title }: { title: string }) => {
                 Medium
               </a>
             </div>
+            {/* <div className="container mx-auto">
+              <EmailForm />
+            </div> */}
             <button
               type="button"
-              className="rounded border-2 border-cyan-900 text-opacity-90 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-cyan-900 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-teal-500 hover:bg-opacity-10 hover:text-green-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              className="rounded border-2 border-cyan-900 text-opacity-90 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-cyan-900 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-teal-500 hover:bg-opacity-10 hover:text-stone-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
               data-te-ripple-init
               data-te-ripple-color="light"
             >
-              Email me
+              <a
+                href="mailto:gdurant34@gmail.com"
+                className="text-cyan-900 text-opacity-90 "
+              >
+                {' '}
+                Email me
+              </a>
             </button>
           </div>
         </div>
