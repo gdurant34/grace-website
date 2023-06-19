@@ -4,22 +4,20 @@ const ResumePage = ({ title }: { title: string }) => {
       <img
         src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
         alt=""
-        className="w-full h-fit object-cover absolute mix-blend-overlay opacity-20 "
+        className="w-full h-fit object-cover absolute mix-blend-overlay opacity-20 z-0"
       />
       <div className="ml-auto mb-6 p-10 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] 3xl:w-[100%] rounded-sm ">
         {/* <div className="h-52 w-full p-1 bg-green-800 opacity-10 rounded-md"></div> */}
         {/* <div className="h-full w-2 bg-blue-200 float-left fixed z-1"></div> */}
 
         <div
-          className="inline-block my-6px	ml-55px w-full h-fit p-4
-        
-        "
+          className="inline-block my-6px	ml-55px w-full h-fit p-4"
         >
           <br />
           <h1 className="font-bold text-6xl	text-amber-800 text-opacity-70">
             Grace Durant
           </h1>
-          <div className="font-semibold text-lg">
+          <div className="font-semibold text-lg relative z-10">
             Seattle, WA |
             <a href="tel:9403123425" className="text-cyan-900 text-opacity-90">
               {' '}
@@ -87,7 +85,7 @@ const ResumePage = ({ title }: { title: string }) => {
 
           <h4 className="h-5 w-full z-1 pt-4 font-bold">EXPERIENCE</h4>
           <br />
-          <div>
+          <div className="relative z-10">
             <p className="py-2">
               <strong>Junior Software Engineer</strong> at{' '}
               <a
@@ -203,7 +201,7 @@ const ResumePage = ({ title }: { title: string }) => {
             </ul>
           </div>
           <h4 className="h-5 w-full z-1 py-4 font-bold">TECHNICAL PROJECTS</h4>
-          <div>
+          <div className="relative z-10">
             <p className="pt-4">
               <span className="font-semibold">Financial Goals</span> -
               <a
@@ -312,7 +310,7 @@ const ResumePage = ({ title }: { title: string }) => {
             </ul>
           </div>
           <h4 className="h-5 w-full z-1 py-4 font-bold">EDUCATION</h4>
-          <p className="pt-4">
+          <p className="pt-4 relative z-10">
             <a
               href="https://www.unt.edu/"
               className="font-bold text-amber-900 text-opacity-90 pl-1"
