@@ -50,14 +50,14 @@ export default function NavBar() {
               <span className="group-hover:text-gray-700">Contact</span>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/projects"
               className={location.pathname === '/projects' ? activeClass : inactiveClass}
             >
               <span className="group-hover:text-gray-700">Projects</span>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/blog"
