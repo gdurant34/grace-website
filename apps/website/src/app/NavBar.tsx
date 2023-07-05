@@ -28,7 +28,9 @@ export default function NavBar() {
           <li>
             <Link
               to="/"
-              className={location.pathname === '/' ? activeClass : inactiveClass}
+              className={
+                location.pathname === '/' ? activeClass : inactiveClass
+              }
             >
               <span className="group-hover:text-gray-700">Home</span>
             </Link>
@@ -36,34 +38,41 @@ export default function NavBar() {
           <li>
             <Link
               to="/resume"
-              className={location.pathname === '/resume' ? activeClass : inactiveClass}
+              className={
+                location.pathname === '/resume' ? activeClass : inactiveClass
+              }
             >
               <span className="group-hover:text-gray-700">Resume</span>
             </Link>
           </li>
           <li>
             <Link
-              to="/contact"
-              className={
-                location.pathname === '/contact' ? activeClass : inactiveClass}
-            >
-              <span className="group-hover:text-gray-700">Contact</span>
-            </Link>
-          </li>
-          {/* <li>
-            <Link
               to="/projects"
-              className={location.pathname === '/projects' ? activeClass : inactiveClass}
+              className={
+                location.pathname === '/projects' ? activeClass : inactiveClass
+              }
             >
               <span className="group-hover:text-gray-700">Projects</span>
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link
               to="/blog"
-              className={location.pathname === '/blog' ? activeClass : inactiveClass}
+              className={
+                location.pathname === '/blog' ? activeClass : inactiveClass
+              }
             >
               <span className="group-hover:text-gray-700">Blog</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className={
+                location.pathname === '/contact' ? activeClass : inactiveClass
+              }
+            >
+              <span className="group-hover:text-gray-700">Contact</span>
             </Link>
           </li>
           {/* <li>
