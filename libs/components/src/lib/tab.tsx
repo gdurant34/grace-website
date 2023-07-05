@@ -32,11 +32,11 @@ export const Tab = () => {
           </List>
           {tabs.map((tab) => (
             <Content className="px-4" value={tab.value} key={tab.id}>
-              <p className="italic text-amber-800 text-opacity-70 flex justify-start">
+              <p className="italic text-amber-800 text-opacity-70 flex justify-center">
                 {tab.description}
               </p>
               <div className="w-full">
-                <ul className="text-sm w-full p-4 ">
+                <ul className="text-sm w-full p-4 justify-start">
                   {tab.bullets.map((bullet) => (
                     <li key={bullet} className="p-4 w-full">
                       {bullet}
