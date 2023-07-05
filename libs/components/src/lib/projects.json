@@ -7,8 +7,8 @@
         "bullets": [
 
         ],
-        "youtube": "https://youtu.be/uDf8yGIArYw",
-        "github": ["https://github.com/gdurant34/phase1-project-shopping-list-builder"]
+        "youtube": "https://www.youtube.com/embed/uDf8yGIArYw",
+        "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/phase1-project-shopping-list-builder"}]
     },
     {
         "id": "2",
@@ -21,8 +21,8 @@
             "Researched solutions to ensure accurate floating-point calculations resulting in improved accuracy and reliability by implementing an external 3rd party library",
             "Leveraged Chrome/React Devtools and strategic console statements to monitor app state and methodically debug errors, leading to improved stability "
         ],
-        "youtube": "https://youtu.be/SM_UWHfj3_8",
-        "github": ["https://github.com/gdurant34/financial_goals_phase_2_project"]
+        "youtube": "https://www.youtube.com/embed/SM_UWHfj3_8",
+        "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/financial_goals_phase_2_project"}]
     },
     {
         "id": "3",
@@ -34,10 +34,10 @@
             "Implemented Semantic-UI React, providing a quick solution for consistent design to expedite development time yielding a visually appealing user interface",
             "Incorporated full CRUD capabilities in a lightweight Sinatra back-end to handle frontend requests for data resulting in seamless data management and manipulation"
         ],
-        "youtube": "https://youtu.be/LZ0wNL8z3N4",
+        "youtube": "https://www.youtube.com/embed/LZ0wNL8z3N4",
         "github": [
-            "https://github.com/gdurant34/project-movie-social",
-            "https://github.com/gdurant34/phase-3-movie-social"
+            {"description":"GitHub Front-end Repo", "link":"https://github.com/gdurant34/project-movie-social"},
+            {"description":"GitHub Back-end Repo", "link":"https://github.com/gdurant34/phase-3-movie-social"}
         ]
     },
     {
@@ -50,7 +50,7 @@
             "Built back-end with full CRUD capabilities and validations in Ruby on Rails, increasing data management and data integrity throughout the application ",
             "Employed Bcrypt hashing on the back-end and authentication routes on the front-end to ensure user privacy "
         ],
-        "youtube": "https://studio.youtube.com/video/SZPFzpYK7As/edit",
-        "github": ["https://github.com/gdurant34/phase-5-project-its-a-date"]
+        "youtube": "https://www.youtube.com/embed/SZPFzpYK7As",
+        "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/phase-5-project-its-a-date"}]
     }
 ]
