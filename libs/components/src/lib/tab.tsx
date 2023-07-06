@@ -13,7 +13,7 @@ export const Tab = () => {
   return (
     <Root defaultValue="tab1" onValueChange={setCurrentValue}>
       <div className="flex justify-center p-6 ">
-        <div className="z-20 relative text-center text-cyan-900 bg-stone-100 bg-opacity-50 rounded-sm text-lg">
+        <div className="z-20 relative text-center text-cyan-900 bg-stone-100 bg-opacity-50 rounded-sm text-lg w-11/12">
           <List
             className="p-8 flex justify-center"
             aria-label="Manage your account"
@@ -36,7 +36,7 @@ export const Tab = () => {
                 {tab.description}
               </p>
               <div className="w-full">
-                <ul className="text-base w-full p-4 justify-start">
+                <ul className="text-base w-full p-4 justify-start list-inside">
                   {tab.bullets.map((bullet) => (
                     <li key={bullet} className="p-2 w-full">
                       {bullet}
