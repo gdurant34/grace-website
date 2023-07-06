@@ -2,17 +2,6 @@
     {
         "id": "1",
         "value": "tab1",
-        "title": "Grocery List Helper",
-        "description": "An app to help a user store fun activities and turn them into dates. Built with JavaScript, HTML, CSS, and JSON server.",
-        "bullets": [
-
-        ],
-        "youtube": "https://www.youtube.com/embed/uDf8yGIArYw",
-        "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/phase1-project-shopping-list-builder"}]
-    },
-    {
-        "id": "2",
-        "value": "tab2",
         "title": "Financial Goals",
         "description": "An app to empower users' financial decisions by providing a system to enter account balances, track transactions, and create financial goals.",
         "bullets": [
@@ -25,8 +14,8 @@
         "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/financial_goals_phase_2_project"}]
     },
     {
-        "id": "3",
-        "value": "tab3",
+        "id": "2",
+        "value": "tab2",
         "title": "Movie Social",
         "description": "A movie library app with search functionality, enabling users to save, rate, and review films. ",
         "bullets": [
@@ -41,8 +30,8 @@
         ]
     },
     {
-        "id": "4",
-        "value": "tab4",
+        "id": "3",
+        "value": "tab3",
         "title": "It's a Date",
         "description": "An app for users to create and store fun activities to turn into date nights.",
         "bullets": [
