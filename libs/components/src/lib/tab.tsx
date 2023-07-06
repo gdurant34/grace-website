@@ -3,7 +3,7 @@ import tabs from '../lib/projects.json';
 import { useState } from 'react';
 
 const active =
-  'bg-amber-800 bg-opacity-5 shadowsm text-cyan-700 px-4 py-3 flex items-center space-x-4 rounded-md font-bold';
+  'bg-amber-800 bg-opacity-5 shadow-sm text-cyan-700 px-4 py-3 flex items-center space-x-4 rounded-md font-bold';
 const inactive =
   'relative px-4 py-3 flex items-center space-x-4 text-gray-600 group rounded-md hover:bg-teal-500 hover:bg-opacity-10';
 
