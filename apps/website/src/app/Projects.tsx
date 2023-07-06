@@ -5,7 +5,7 @@ const Projects = ({ title }: { title: string }) => {
   
 
   return (
-    <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-screen">
+    <div className="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-fill">
       <img
         src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
         alt=""
