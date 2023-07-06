@@ -3,7 +3,7 @@ import tabs from '../lib/projects.json';
 import { useState } from 'react';
 
 const active =
-  'bg-amber-800 bg-opacity-5 text-cyan-700 px-4 py-3 flex items-center space-x-4 rounded-md font-bold';
+  'bg-amber-800 bg-opacity-5 shadowsm text-cyan-700 px-4 py-3 flex items-center space-x-4 rounded-md font-bold';
 const inactive =
   'relative px-4 py-3 flex items-center space-x-4 text-gray-600 group rounded-md hover:bg-teal-500 hover:bg-opacity-10';
 
@@ -13,7 +13,7 @@ export const Tab = () => {
   return (
     <Root defaultValue="tab1" onValueChange={setCurrentValue}>
       <div className="flex justify-center p-6 ">
-        <div className="z-20 relative text-center bo text-cyan-900 bg-stone-100 bg-opacity-50 rounded-sm">
+        <div className="z-20 relative text-center text-cyan-900 bg-stone-100 bg-opacity-50 rounded-sm">
           <List
             className="p-8 flex justify-center"
             aria-label="Manage your account"
