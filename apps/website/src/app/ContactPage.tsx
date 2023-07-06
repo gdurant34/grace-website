@@ -4,7 +4,7 @@ const Contact = ({ title }: { title: string }) => {
       <img
         src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
         alt=""
-        className="w-full h-full z-0 object-cover absolute mix-blend-overlay opacity-90"
+        className="w-full h-full z-0 object-cover fixed mix-blend-overlay opacity-90"
       />
       <div className="p-12 text-center">
         {/* <div className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"> */}

@@ -9,7 +9,7 @@ const Projects = ({ title }: { title: string }) => {
       <img
         src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
         alt=""
-        className="w-full h-full z-0 object-cover absolute mix-blend-overlay opacity-90"
+        className="w-full h-full z-0 object-cover mix-blend-overlay opacity-90 fixed"
       />
       <Tab />
     </div>

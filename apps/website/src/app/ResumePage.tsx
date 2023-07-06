@@ -1,16 +1,12 @@
 const ResumePage = ({ title }: { title: string }) => {
   return (
-    <div className="h-fit w-full text-slate-800">
-      <img
-        src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
-        alt=""
-        className="w-full h-fit object-cover absolute mix-blend-overlay opacity-20 z-0"
-      />
-      <div className="ml-auto mb-6 p-10 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] 3xl:w-[100%] rounded-sm ">
-        {/* <div className="h-52 w-full p-1 bg-green-800 opacity-10 rounded-md"></div> */}
-        {/* <div className="h-full w-2 bg-blue-200 float-left fixed z-1"></div> */}
-
-        <div
+    <div className="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-screen">
+      <img 
+      src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
+      alt=''
+      className='w-full h-full object-cover fixed mix-blend-overlay opacity-40'/>
+      <div className='p-10'>
+         <div
           className="inline-block my-6px	ml-55px w-full h-fit p-4"
         >
           <br />
@@ -228,7 +224,7 @@ const ResumePage = ({ title }: { title: string }) => {
             <ul className="list-disc list-inside px-4">
               <li>
                 Developed a lightweight interactive interface for React to
-                visulize goal progress bar
+                visualize goal progress bar
               </li>
               <li>
                 Researched solutions and implemented a 3rd party library to

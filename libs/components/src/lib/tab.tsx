@@ -13,7 +13,7 @@ export const Tab = () => {
   return (
     <Root defaultValue="tab1" onValueChange={setCurrentValue}>
       <div className="flex justify-center p-6 ">
-        <div className="z-20 relative text-center text-cyan-900 bg-stone-100 bg-opacity-50 rounded-sm">
+        <div className="z-20 relative text-center bo text-cyan-900 bg-stone-100 bg-opacity-50 rounded-sm">
           <List
             className="p-8 flex justify-center"
             aria-label="Manage your account"
