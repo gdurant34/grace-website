@@ -15,10 +15,10 @@ export const Card = ({
   description: string;
   link: string;
 }) => (
-  <div className="w-auto lg:max-w-full lg:flex p-1.5 h-fit overflow-hidden">
+  <div className="w-auto lg:max-w-full lg:flex h-80 overflow-hidden">
     <AspectRatio.Root ratio={16 / 9}>
       <img
-        className="object-cover h-full w-full"
+        className="object-cover h-full w-full "
         src={image}
         alt="team collaborating"
       />
