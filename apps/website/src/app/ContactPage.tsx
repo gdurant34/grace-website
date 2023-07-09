@@ -1,14 +1,14 @@
 const Contact = ({ title }: { title: string }) => {
   return (
-    <div className="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-screen">
+    <div className="h-full flex justify-center py-16">
       <img
         src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
         alt=""
         className="w-full h-full z-0 object-cover fixed mix-blend-overlay opacity-90"
       />
-      <div className="p-12 text-center">
+      <div className="p-12 text-center fixed">
         {/* <div className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"> */}
-        <div className="flex items-center justify-center">
+        <div className="">
           <div className="relative z-10">
             <h1 className="mb-4 text-5xl font-semibold text-amber-900 text-opacity-70">
               {' '}

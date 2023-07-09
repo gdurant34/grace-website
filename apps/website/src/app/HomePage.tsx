@@ -2,7 +2,7 @@
 
 const HomePage = ({ title }: { title: string }) => {
   return (
-    <div className="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-screen">
+    <div className="h-full flex justify-center py-16 fixed">
       <img 
       src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
       alt=''
@@ -10,7 +10,7 @@ const HomePage = ({ title }: { title: string }) => {
       <div className="p-12 2xl:container h-screen center">
         <div>
           {/* <div className="h-100 p-12 space-y-6 border border-gray-200 bg-slate-50 bg-opacity-100 rounded-lg"> */}
-          <div className="h-100 p-12 space-y-6  bg-stone-100 bg-opacity-70 rounded-sm">
+          <div className="h-100 p-12 space-y-6  bg-stone-100 bg-opacity-70 rounded-sm ">
               <h3 className="text-5xl font-bold text-cyan-950 text-opacity-90">My Why</h3>
               <p className='text-lg font-normal  text-black'>
                 I am a career professional with 12 years of experience across

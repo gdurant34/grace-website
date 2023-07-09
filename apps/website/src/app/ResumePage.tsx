@@ -1,6 +1,6 @@
 const ResumePage = ({ title }: { title: string }) => {
   return (
-    <div className="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-screen">
+    <div className="h-full flex justify-center py-16">
       <img 
       src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
       alt=''

@@ -28,13 +28,13 @@ const Blog = ({ title }: { title: string }) => {
   }
 
   return (
-    <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] h-fit ">
+    <div className="h-full flex justify-center py-16">
       <img 
       src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
       alt=''
       className='w-full h-full object-cover fixed mix-blend-overlay opacity-90'/>
       <div>
-        <div className="px-20 py-10">
+        <div className="px-20 py-10 ">
           {renderArticles()}
         </div>
       </div>
