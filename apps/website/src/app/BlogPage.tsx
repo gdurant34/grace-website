@@ -33,8 +33,8 @@ const Blog = ({ title }: { title: string }) => {
       src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
       alt=''
       className='w-full h-full object-cover fixed mix-blend-overlay opacity-90'/>
-      <div>
-        <div className="px-20 py-10 ">
+      <div> 
+        <div className="px-20 py-10">
           {renderArticles()}
         </div>
       </div>
