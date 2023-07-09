@@ -300,7 +300,7 @@ export default function NavBar() {
       </div>
       {isNavOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 sm:px-3">
+          <div className="px-2 pt-10 pb-3 sm:px-3">
             <Link
               to="/"
               className={
