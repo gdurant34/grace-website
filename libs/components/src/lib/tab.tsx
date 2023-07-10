@@ -30,15 +30,15 @@ export const Tab = () => {
                   {tab.description}
                 </p>
                 <div className="w-full text-center">
-                  <ul className="text-base px-20 list-inside">
+                  <ul className="text-base list-inside lg:px-20">
                     {tab.bullets.map((bullet) => (
                       <li key={bullet} className="p-2">
                         {bullet}
                       </li>
                     ))}
                   </ul>
-                  <div className="aspect-w-16 aspect-h-9 flex justify-center">
-                    <div className="w-1/2 h-1/2">
+                  <div className="md:aspect-w-16 md:aspect-h-9 flex justify-center">
+                    <div className="w-1/2 h-1/2 ">
                       <iframe
                         className="m-5"
                         width="100%"
