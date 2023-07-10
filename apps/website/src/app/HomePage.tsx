@@ -2,7 +2,7 @@
 
 const HomePage = ({ title }: { title: string }) => {
   return (
-    <div className="h-full flex justify-center py-16 fixed">
+    <div className="h-full flex justify-center py-16">
       <img 
       src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
       alt=''
