@@ -29,8 +29,8 @@ export const Tab = () => {
                 <p className="italic text-amber-800 text-opacity-70 flex justify-center text-lg p-4">
                   {tab.description}
                 </p>
-                <div className="w-full">
-                  <ul className="text-base px-40 list-inside">
+                <div className="w-full text-center">
+                  <ul className="text-base px-20 list-inside">
                     {tab.bullets.map((bullet) => (
                       <li key={bullet} className="p-2">
                         {bullet}
