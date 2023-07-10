@@ -69,7 +69,7 @@ const ResumePage = ({ title }: { title: string }) => {
           <p>
             <span className="h-5 w-full z-1 font-bold">SKILLS: </span>
             Tailwind | Recoil | Git | Node | ActiveRecord | Object-Oriented
-            Programing | Functional Programing
+            Programming | Functional Programming
           </p>
           <p>
             <span className="h-5 w-full z-1 font-bold">CERTIFICATIONS: </span>
