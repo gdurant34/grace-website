@@ -25,9 +25,9 @@ export const Card = ({
         />
       </AspectRatio.Root>
       <div className="border-r bg-cyan-800 bg-opacity-70 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal drop-shadow-lg">
-        <div className="mb-8">
+        <div className="">
           <p className="text-sm text-slate-100 flex items-center">Medium</p>
-          <div className="text-slate-100 font-bold text-xl mb-2">
+          <div className="text-slate-100 font-bold text-xl">
             <a
               href={link}
               target="_blank"
