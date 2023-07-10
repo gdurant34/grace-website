@@ -15,7 +15,7 @@ export const Card = ({
   description: string;
   link: string;
 }) => (
-  <div className='p-5'>
+  <div className='p-5 max-w-4xl'>
     <div className="w-auto lg:max-w-full lg:flex h-60 overflow-hidden">
       <AspectRatio.Root ratio={16 / 9}>
         <img
