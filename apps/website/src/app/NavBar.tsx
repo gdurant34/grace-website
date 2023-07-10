@@ -201,6 +201,10 @@ export default function NavBar() {
     setIsNavOpen(!isNavOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsNavOpen(false);
+  };
+
   return (
     <nav className="bg-white shadow fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
@@ -215,9 +219,9 @@ export default function NavBar() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-center space-x-4">
-                <p className='text-cyan-700'>
-                  <span className=' text-lg font-bold'>Grace Durant</span>
-                  <br/>
+                <p className="text-cyan-700">
+                  <span className=" text-lg font-bold">Grace Durant</span>
+                  <br />
                   Software Engineer
                 </p>
                 <Link
@@ -231,7 +235,9 @@ export default function NavBar() {
                 <Link
                   to="/resume"
                   className={
-                    location.pathname === '/resume' ? activeClass : inactiveClass
+                    location.pathname === '/resume'
+                      ? activeClass
+                      : inactiveClass
                   }
                 >
                   <span className="group-hover:text-gray-700">Resume</span>
@@ -239,7 +245,9 @@ export default function NavBar() {
                 <Link
                   to="/projects"
                   className={
-                    location.pathname === '/projects' ? activeClass : inactiveClass
+                    location.pathname === '/projects'
+                      ? activeClass
+                      : inactiveClass
                   }
                 >
                   <span className="group-hover:text-gray-700">Projects</span>
@@ -255,7 +263,9 @@ export default function NavBar() {
                 <Link
                   to="/contact"
                   className={
-                    location.pathname === '/contact' ? activeClass : inactiveClass
+                    location.pathname === '/contact'
+                      ? activeClass
+                      : inactiveClass
                   }
                 >
                   <span className="group-hover:text-gray-700">Contact</span>
@@ -306,6 +316,7 @@ export default function NavBar() {
               className={
                 location.pathname === '/' ? activeClass : inactiveClass
               }
+              onClick={handleLinkClick}
             >
               <span className="group-hover:text-gray-700">Home</span>
             </Link>
@@ -314,6 +325,7 @@ export default function NavBar() {
               className={
                 location.pathname === '/resume' ? activeClass : inactiveClass
               }
+              onClick={handleLinkClick}
             >
               <span className="group-hover:text-gray-700">Resume</span>
             </Link>
@@ -322,6 +334,7 @@ export default function NavBar() {
               className={
                 location.pathname === '/projects' ? activeClass : inactiveClass
               }
+              onClick={handleLinkClick}
             >
               <span className="group-hover:text-gray-700">Projects</span>
             </Link>
@@ -330,6 +343,7 @@ export default function NavBar() {
               className={
                 location.pathname === '/blog' ? activeClass : inactiveClass
               }
+              onClick={handleLinkClick}
             >
               <span className="group-hover:text-gray-700">Blog</span>
             </Link>
@@ -338,6 +352,7 @@ export default function NavBar() {
               className={
                 location.pathname === '/contact' ? activeClass : inactiveClass
               }
+              onClick={handleLinkClick}
             >
               <span className="group-hover:text-gray-700">Contact</span>
             </Link>
