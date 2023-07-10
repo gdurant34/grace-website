@@ -69,7 +69,7 @@ export const Card = ({
   description: string;
   link: string;
 }) => (
-  <div className='p-5 max-w-4xl'>
+  <div className="p-5 max-w-4xl">
     <div className="w-auto lg:max-w-full lg:flex h-60 overflow-hidden">
       <AspectRatio.Root ratio={16 / 9}>
         <img
@@ -91,12 +91,26 @@ export const Card = ({
               {title}
             </a>
           </div>
-          <p className={`text-slate-100 text-base ${description ? 'hidden md:block' : ''}`}>{description}</p>
+          <p
+            className={`text-slate-100 text-base ${
+              description ? 'hidden md:block' : ''
+            }`}
+          >
+            {description}
+          </p>
         </div>
         <div className="flex items-center">
           <div className="text-sm">
-            <p className={`text-gray-900 leading-none ${name ? 'hidden md:block' : ''}`}>{name}</p>
-            <p className={`text-slate-100 ${date ? 'hidden md:block' : ''}`}>{date}</p>
+            <p
+              className={`text-gray-900 leading-none ${
+                name ? 'hidden md:block' : ''
+              }`}
+            >
+              {name}
+            </p>
+            <p className={`text-slate-100 ${date ? 'hidden md:block' : ''}`}>
+              {date}
+            </p>
           </div>
         </div>
       </div>
