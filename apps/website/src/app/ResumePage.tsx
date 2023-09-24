@@ -1,14 +1,13 @@
 const ResumePage = ({ title }: { title: string }) => {
   return (
     <div className="h-full flex justify-center py-16">
-      <img 
-      src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
-      alt=''
-      className='w-full h-full object-cover fixed mix-blend-overlay opacity-40'/>
-      <div className='p-10'>
-         <div
-          className="inline-block my-6px	ml-55px w-full h-fit p-4"
-        >
+      <img
+        src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
+        alt=""
+        className="w-full h-full object-cover fixed mix-blend-overlay opacity-40"
+      />
+      <div className="p-10">
+        <div className="inline-block my-6px	ml-55px w-full h-fit p-4">
           <br />
           <h1 className="font-bold text-6xl	text-amber-800 text-opacity-70">
             Grace Durant
@@ -63,7 +62,7 @@ const ResumePage = ({ title }: { title: string }) => {
           <br />
           <p className="">
             <span className="h-5 w-full z-1  font-bold">TECHNOLOGY: </span>
-            React | Typescript | PostgreSQL | Ruby | Ruby on Rails | HTML5 &
+            React | JavaScript | Typescript | PostgreSQL | Ruby | Ruby on Rails | HTML5 &
             CSS3
           </p>
           <p>
@@ -229,6 +228,51 @@ const ResumePage = ({ title }: { title: string }) => {
               <li>
                 Researched solutions and implemented a 3rd party library to
                 achieve accurate floating-point calculations
+              </li>
+            </ul>
+            <p className="pt-4">
+              <span className="font-semibold">Friends of Grace</span> -
+              <a
+                href="https://github.com/gdurant34/grace-friends"
+                className="text-amber-900 text-opacity-90"
+              >
+                {' '}
+                Github
+              </a>{' '}
+              |
+              <a
+                href="https://www.loom.com/share/127378af496242d9911aee70ad63b9f4?sid=a18bbb1f-f139-4825-b724-7b9c0e0137ae"
+                className="text-amber-900 text-opacity-90"
+              >
+                {' '}
+                Demo
+              </a>{' '}
+              |
+              <a
+                href="https://friends-kgrn.onrender.com/users/sign_up"
+                className="text-amber-900 text-opacity-90"
+              >
+                {' '}
+                Web App
+              </a>
+            </p>
+            <p className="italic">
+              A CRM tool to help a user keep track of friends, and contact
+              information.
+            </p>
+            <ul className="list-disc list-inside px-4">
+              <li>
+                Implemented user authentication, registration, and session
+                management utilizing the Devise Gem
+              </li>
+              <li>
+                Enhanced user experience and intuitiveness by applying Bootstrap
+                for app styling
+              </li>
+              <li>
+                Built the complete application using Ruby and Ruby on Rails,
+                implementing comprehensive CRUD scaffolding, partials, and
+                associations
               </li>
             </ul>
             <p className="pt-4">
