@@ -10,8 +10,9 @@
             "Researched solutions to ensure accurate floating-point calculations resulting in improved accuracy and reliability by implementing an external 3rd party library",
             "Leveraged Chrome/React Devtools and strategic console statements to monitor app state and methodically debug errors, leading to improved stability "
         ],
-        "youtube": "https://www.youtube.com/embed/SM_UWHfj3_8",
-        "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/financial_goals_phase_2_project"}]
+        "video": "https://www.youtube.com/embed/SM_UWHfj3_8",
+        "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/financial_goals_phase_2_project"}],
+        "websiteInfo": null
     },
     {
         "id": "2",
@@ -23,11 +24,12 @@
             "Implemented Semantic-UI React, providing a quick solution for consistent design to expedite development time yielding a visually appealing user interface",
             "Incorporated full CRUD capabilities in a lightweight Sinatra back-end to handle frontend requests for data resulting in seamless data management and manipulation"
         ],
-        "youtube": "https://www.youtube.com/embed/LZ0wNL8z3N4",
+        "video": "https://www.youtube.com/embed/LZ0wNL8z3N4",
         "github": [
             {"description":"GitHub Front-end Repo", "link":"https://github.com/gdurant34/project-movie-social"},
             {"description":"GitHub Back-end Repo", "link":"https://github.com/gdurant34/phase-3-movie-social"}
-        ]
+        ],
+        "websiteInfo": null
     },
     {
         "id": "3",
@@ -39,7 +41,22 @@
             "Built back-end with full CRUD capabilities and validations in Ruby on Rails, increasing data management and data integrity throughout the application ",
             "Employed Bcrypt hashing on the back-end and authentication routes on the front-end to ensure user privacy "
         ],
-        "youtube": "https://www.youtube.com/embed/SZPFzpYK7As",
-        "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/phase-5-project-its-a-date"}]
+        "video": "https://www.youtube.com/embed/SZPFzpYK7As",
+        "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/phase-5-project-its-a-date"}],
+        "websiteInfo": null
+    },
+    {
+        "id": "4",
+        "value": "tab4",
+        "title": "Friends of Grace",
+        "description": "A CRM tool to help a user keep track of friends, and contact information.",
+        "bullets": [
+            "Implemented user authentication, registration, and session management utilizing the Devise Gem",
+            "Enhanced user experience and intuitiveness by applying Bootstrap for app styling",
+            "Built the complete application using Ruby and Ruby on Rails, implementing comprehensive CRUD scaffolding, partials, and associations"
+        ],
+        "video": "https://www.loom.com/embed/127378af496242d9911aee70ad63b9f4?sid=92ae9c1d-0ed6-4cfa-a87c-25e9ff42f8f1",
+        "github": [{"description": "GitHub Monorepo", "link":"https://github.com/gdurant34/grace-friends"}],
+        "websiteInfo": [{"description": "Web App", "link":"https://friends-kgrn.onrender.com/users/sign_up"}]
     }
 ]
