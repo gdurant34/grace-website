@@ -62,8 +62,8 @@ const ResumePage = ({ title }: { title: string }) => {
           <br />
           <p className="">
             <span className="h-5 w-full z-1  font-bold">TECHNOLOGY: </span>
-            React | JavaScript | Typescript | PostgreSQL | Ruby | Ruby on Rails | HTML5 &
-            CSS3
+            React | JavaScript | Typescript | PostgreSQL | Ruby | Ruby on Rails
+            | HTML5 & CSS3
           </p>
           <p>
             <span className="h-5 w-full z-1 font-bold">SKILLS: </span>
@@ -198,39 +198,6 @@ const ResumePage = ({ title }: { title: string }) => {
           <h4 className="h-5 w-full z-1 py-4 font-bold">TECHNICAL PROJECTS</h4>
           <div className="relative z-10">
             <p className="pt-4">
-              <span className="font-semibold">Financial Goals</span> -
-              <a
-                href="https://github.com/gdurant34/financial_goals_phase_2_project"
-                className="text-amber-900 text-opacity-90"
-              >
-                {' '}
-                Github
-              </a>{' '}
-              |
-              <a
-                href="https://www.youtube.com/watch?v=SM_UWHfj3_8&t=3s"
-                className="text-amber-900 text-opacity-90"
-              >
-                {' '}
-                Demo
-              </a>
-            </p>
-            <p className="italic">
-              An app to empower users' financial decisions by providing a system
-              to enter account balances, track transactions, and create
-              financial goals.
-            </p>
-            <ul className="list-disc list-inside px-4">
-              <li>
-                Developed a lightweight interactive interface for React to
-                visualize goal progress bar
-              </li>
-              <li>
-                Researched solutions and implemented a 3rd party library to
-                achieve accurate floating-point calculations
-              </li>
-            </ul>
-            <p className="pt-4">
               <span className="font-semibold">Friends of Grace</span> -
               <a
                 href="https://github.com/gdurant34/grace-friends"
@@ -275,6 +242,40 @@ const ResumePage = ({ title }: { title: string }) => {
                 associations
               </li>
             </ul>
+            <p className="pt-4">
+              <span className="font-semibold">Financial Goals</span> -
+              <a
+                href="https://github.com/gdurant34/financial_goals_phase_2_project"
+                className="text-amber-900 text-opacity-90"
+              >
+                {' '}
+                Github
+              </a>{' '}
+              |
+              <a
+                href="https://www.youtube.com/watch?v=SM_UWHfj3_8&t=3s"
+                className="text-amber-900 text-opacity-90"
+              >
+                {' '}
+                Demo
+              </a>
+            </p>
+            <p className="italic">
+              An app to empower users' financial decisions by providing a system
+              to enter account balances, track transactions, and create
+              financial goals.
+            </p>
+            <ul className="list-disc list-inside px-4">
+              <li>
+                Developed a lightweight interactive interface for React to
+                visualize goal progress bar
+              </li>
+              <li>
+                Researched solutions and implemented a 3rd party library to
+                achieve accurate floating-point calculations
+              </li>
+            </ul>
+
             <p className="pt-4">
               <span className="font-semibold">Movie Social</span> -
               <a
