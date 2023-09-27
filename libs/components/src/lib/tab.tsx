@@ -33,7 +33,7 @@ export const Tab = () => {
   const video = tabs.map((tab) => {
     return tab.video !== null && tab.value === currentValue ? (
       <div key={tab.id} className="md:aspect-w-16 md:aspect-h-9 flex justify-center">
-        <div className="w-1/2 h-1/2 ">
+        <div className="w-1/2 h-1/2">
           <iframe
             className="m-5"
             width="100%"
@@ -51,10 +51,10 @@ export const Tab = () => {
   return (
     <div className="container mx-auto px-4">
       <Root defaultValue="tab1" onValueChange={setCurrentValue}>
-        <div className="p-6 flex justify-center">
+        <div className="p-6 flex justify-center max-w-7xl sm:px-6 lg:px-8">
           <div className="z-20 relative text-cyan-900 bg-stone-100 bg-opacity-50 rounded-sm text-lg sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
             <List
-              className="p-8 flex justify-center"
+              className="p-8 flex flex-col md:flex-row justify-center" // Use flex-col for mobile and flex-row for desktop
               aria-label="Manage your account"
             >
               {tabs.map((tab) => (
@@ -78,7 +78,7 @@ export const Tab = () => {
                 <p className="italic text-amber-800 text-opacity-70 flex justify-center text-lg p-4">
                   {tab.description}
                 </p>
-                <div className="w-full text-center">
+                <div className="w-full text-center justify-center">
                   <ul className="text-base list-inside lg:px-20">
                     {tab.bullets.map((bullet) => (
                       <li key={bullet} className="p-2">
