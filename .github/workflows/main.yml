@@ -21,6 +21,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
 
+      - run: pnpm nx reset || true
       - run: pnpm nx lint website --parallel=3 || true
       - run: pnpm nx format:check || true
       - run: pnpm nx test website --parallel=3 --configuration=ci || true
