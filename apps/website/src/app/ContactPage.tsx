@@ -64,6 +64,7 @@ const Contact = ({ title }: { title: string }) => {
               width="100%"
               height="800px"
               className="p-5 overflow-auto"
+              sandbox="allow-scripts allow-same-origin"
             ></iframe>
           </div>
         </div>
