@@ -62,8 +62,8 @@ const ResumePage = ({ title }: { title: string }) => {
           <br />
           <p className="">
             <span className="h-5 w-full z-1  font-bold">TECHNOLOGY: </span>
-            React | JavaScript | Typescript | PostgreSQL | Ruby | Ruby on Rails
-            | HTML5 & CSS3
+            React | JavaScript | Typescript | PostgreSQL | Ruby | Ruby on Rails | HTML5 &
+            CSS3
           </p>
           <p>
             <span className="h-5 w-full z-1 font-bold">SKILLS: </span>
@@ -197,7 +197,7 @@ const ResumePage = ({ title }: { title: string }) => {
           </div>
           <h4 className="h-5 w-full z-1 py-4 font-bold">TECHNICAL PROJECTS</h4>
           <div className="relative z-10">
-            <p className="pt-4">
+          <p className="pt-4">
               <span className="font-semibold">Friends of Grace</span> -
               <a
                 href="https://github.com/gdurant34/grace-friends"
@@ -275,7 +275,7 @@ const ResumePage = ({ title }: { title: string }) => {
                 achieve accurate floating-point calculations
               </li>
             </ul>
-
+           
             <p className="pt-4">
               <span className="font-semibold">Movie Social</span> -
               <a
