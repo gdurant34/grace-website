@@ -79,17 +79,14 @@ const ResumePage = ({ title }: { title: string }) => {
             AWS Certified Cloud Practitioner, Flatiron’s Software Engineering
             Live
           </p>
-
           <br />
-
           <h4 className="h-5 w-full z-1 pt-4 font-bold">EXPERIENCE</h4>
           <br />
           <div className="relative z-10">
             <p className="py-2">
               <strong>
-
               <a
-                href="https://www.softwareadvice.com/"
+                href="https://stlswing.dance/"
                 className="font-bold text-amber-900 text-opacity-90"
               >
                 STL Swing {' '}
