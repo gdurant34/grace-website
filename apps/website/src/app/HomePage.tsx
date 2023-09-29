@@ -7,7 +7,7 @@ const HomePage = ({ title }: { title: string }) => {
       src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
       alt=''
       className='w-full h-full object-cover fixed mix-blend-overlay opacity-90'/>
-      <div className="p-12 2xl:container h-screen center">
+      <div className="p-12 2xl:container h-screen center fixed overflow-auto">
         <div>
           {/* <div className="h-100 p-12 space-y-6 border border-gray-200 bg-slate-50 bg-opacity-100 rounded-lg"> */}
           <div className="h-100 p-12 space-y-6  bg-stone-100 bg-opacity-70 rounded-sm ">
