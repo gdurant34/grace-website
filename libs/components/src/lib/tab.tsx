@@ -12,18 +12,14 @@ export const Tab = () => {
 
   const website = tabs.map((tab) => {
     return tab.websiteInfo != null && tab.value === currentValue ? (
-      <div key={tab.id} className="m-4 flex justify-center space-x-4">
-        <li
-
-          className="m-4 flex justify-center list-none w-1/3 rounded border-2 border-cyan-900 text-opacity-90 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-cyan-900 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-teal-500 hover:bg-opacity-10 hover:text-stone-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-        >
+      <div key={tab.id} 
+      className="mt-4 flex flex-col items-center space-y-4">
+        <li className="m-2 w-1/2 text-center list-none rounded border-2 border-cyan-900 text-opacity-90 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-cyan-900 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-teal-500 hover:bg-opacity-10 hover:text-stone-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10">
           <a
             href={tab.websiteInfo[0].link}
             className="text-cyan-900 text-opacity-90"
           >
-            {tab.websiteInfo[0].description}
-            {' '} - {' '}
-            (Render's free tier is slow!) 
+            {tab.websiteInfo[0].description} - (Render's free tier is slow!)
           </a>
         </li>
       </div>
@@ -32,26 +28,30 @@ export const Tab = () => {
 
   const video = tabs.map((tab) => {
     return tab.video !== null && tab.value === currentValue ? (
-      <div key={tab.id} className="md:aspect-w-16 md:aspect-h-9 flex justify-center">
-        <div className="w-1/2 h-1/2">
+      <div
+        key={tab.id}
+        className=" h-full w-full flex justify-center"
+      >
+        {/* <div className=""> */}
           <iframe
             className="m-5"
             width="100%"
             height="100%"
             src={tab.video}
             title="video player"
-          // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
-        </div>
+        {/* </div> */}
       </div>
     ) : null;
   });
+  
 
   return (
     <div className="container mx-auto px-4">
       <Root defaultValue="tab1" onValueChange={setCurrentValue}>
-        <div className="p-6 flex justify-center max-w-7xl sm:px-6 lg:px-8">
+        <div className="p-6 flex justify-center  sm:px-6 lg:px-8">
           <div className="z-20 relative text-cyan-900 bg-stone-100 bg-opacity-50 rounded-sm text-lg sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
             <List
               className="p-8 flex flex-col md:flex-row justify-center" // Use flex-col for mobile and flex-row for desktop
@@ -71,41 +71,74 @@ export const Tab = () => {
             </List>
             {tabs.map((tab) => (
               <Content
-                className="px-4 text-center"
-                value={tab.value}
-                key={tab.id}
-              >
-                <p className="italic text-amber-800 text-opacity-70 flex justify-center text-lg p-4">
-                  {tab.description}
-                </p>
-                <div className="w-full text-center justify-center">
-                  <ul className="text-base list-inside lg:px-20">
-                    {tab.bullets.map((bullet) => (
-                      <li key={bullet} className="p-2">
-                        {bullet}
-                      </li>
-                    ))}
-                  </ul>
-                  {video}
-                  {website}
-                  <div className="m-4 flex justify-center space-x-4">
-                    {tab.github.map((link) => (
-                      <li
-                        key={link.description}
-                        className="m-4 flex justify-center list-none w-1/3 rounded border-2 border-cyan-900 text-opacity-90 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-cyan-900 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-teal-500 hover:bg-opacity-10 hover:text-stone-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-                      >
-                        <a
-                          href={link.link}
-                          className="text-cyan-900 text-opacity-90"
-                        >
-                          {link.description}
-                        </a>
-                      </li>
-                    ))}
+              className="px-4 text-center flex flex-col items-center" // Use flex-col for vertical alignment
+              value={tab.value}
+              key={tab.id}
+            >
+              {tab.video !== null ? (
+                <div className="w-full md:flex md:flex-row md:items-center">
+                  <div className="w-full md:w-1/2">
+                    <div className="flex-row">
+                      <p className="italic text-amber-800 text-opacity-70 flex justify-center text-lg p-4 font-bold">
+                        {tab.description}
+                      </p>
+                      <div className="w-full text-left justify-center flex-left">
+                        <ul className="text-base list-inside lg:px-20">
+                          {tab.bullets.map((bullet) => (
+                            <li key={bullet} className="p-2">
+                              {bullet}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                
+                  <div className="w-full md:w-1/2 flex items-center justify-center mt-4 md:mt-0">
+                    {video}
+                  </div>
                 </div>
-              </Content>
+              ) : (
+                // Center the bullets when there isn't a video
+                <div className="w-full">
+                  <div className="flex-row">
+                    <p className="italic text-amber-800 text-opacity-70 flex justify-center text-lg p-4 font-bold">
+                      {tab.description}
+                    </p>
+                    <div className="w-full text-left justify-center flex-left">
+                      <ul className="text-base list-inside lg:px-20">
+                        {tab.bullets.map((bullet) => (
+                          <li key={bullet} className="p-2">
+                            {bullet}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              )}
+            
+              <div className="w-full flex flex-col items-center ">
+                {website}
+              </div>
+            
+              <div className=" flex flex-col items-center m-4 ">
+                {tab.github.map((link) => (
+                  <li
+                    key={link.description}
+                    // className="m-2 w-full md:w-auto text-center list-none rounded border-2 border-cyan-900 text-opacity-90 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-cyan-900 whitespace-nowrap transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-teal-500 hover:bg-opacity-10 hover:text-stone-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"                  >
+                    className="m-2 w-full text-center list-none rounded border-2 border-cyan-900 text-opacity-90 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-cyan-900 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-teal-500 hover:bg-opacity-10 hover:text-stone-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10">
+                                          <a
+                      href={link.link}
+                      className="text-cyan-900 text-opacity-90 block text-center"
+                    >
+                      {link.description}
+                    </a>
+                  </li>
+                ))}
+              </div>
+            </Content>
+            
+            
             ))}
           </div>
         </div>
