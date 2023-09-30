@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 
 const Contact = ({ title }: { title: string }) => {
@@ -20,6 +18,8 @@ const Contact = ({ title }: { title: string }) => {
             <div className="mb-4 flex flex-col md:flex-row items-center justify-center space-x-2">
               <a
                 href="https://github.com/gdurant34"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
                 className="text-cyan-900 text-opacity-90 mb-4 text-xl font-semibold flex items-center"
               >
                 <span>Github</span>
@@ -37,6 +37,8 @@ const Contact = ({ title }: { title: string }) => {
             <div className="mb-4 flex flex-col md:flex-row items-center justify-center space-x-2">
               <a
                 href="https://www.linkedin.com/in/gracedurant/"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
                 className="text-cyan-900 text-opacity-90 mb-4 text-xl font-semibold flex items-center"
               >
                 <span>LinkedIn</span>
@@ -53,6 +55,8 @@ const Contact = ({ title }: { title: string }) => {
             <div className="mb-6 flex flex-col md:flex-row items-center justify-center space-x-2">
               <a
                 href="https://medium.com/@gdurant34"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
                 className="text-cyan-900 text-opacity-90 mb-4 text-xl font-semibold flex items-center"
               >
                 <span>Medium</span>
@@ -75,6 +79,8 @@ const Contact = ({ title }: { title: string }) => {
               >
                 <a
                   href="mailto:gdurant34@gmail.com"
+                  target="_blank" // Add this line
+                  rel="noopener noreferrer" // Also add this line for security reasons
                   className="text-cyan-900 text-opacity-90 font-semibold flex items-center"
                 >
                   <span>Email me</span>
@@ -91,7 +97,9 @@ const Contact = ({ title }: { title: string }) => {
             </div>
           </div>
         </div>
-        <p className="text-cyan-900 text-opacity-90 font-semibold flex items-center p-16 text-6xl">Let's have a coffee chat!</p>
+        <p className="text-cyan-900 text-opacity-90 font-semibold flex items-center p-16 text-6xl">
+          Let's have a coffee chat!
+        </p>
       </div>
 
       {/* Right side (Calendly) */}
