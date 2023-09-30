@@ -30,7 +30,7 @@ const Blog = ({ title }: { title: string }) => {
   return (
     <div className="h-full flex justify-center pt-10">
       <img 
-      src='/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg'
+      src='/assets/images/lum3n--RBuQ2PK_L8-unsplash.jpg'
       alt=''
       className='w-full h-full object-cover fixed mix-blend-overlay opacity-90'/>
       <div> 
