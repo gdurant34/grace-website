@@ -191,7 +191,7 @@ import { useState } from 'react';
 export default function NavBar() {
   const location = useLocation();
   const activeClass =
-    'bg-amber-800 bg-opacity-10 text-cyan-700  px-4 py-3 flex items-center space-x-4 rounded-md font-bold';
+    'bg-rose-800 bg-opacity-20 text-cyan-900  px-4 py-3 flex items-center space-x-4 rounded-md font-bold';
   const inactiveClass =
     'relative px-4 py-3 flex items-center space-x-4 text-gray-600 group rounded-md';
 
@@ -219,7 +219,7 @@ export default function NavBar() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-center space-x-4">
-                <p className="text-cyan-700">
+                <p className="text-cyan-900">
                   <span className=" text-lg font-bold">Grace Durant</span>
                   <br />
                   Software Engineer

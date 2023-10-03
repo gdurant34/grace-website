@@ -6,21 +6,21 @@ const Contact = ({ title }: { title: string }) => {
       {/* Left side (Contact items) */}
       <div className="w-full h-full md:w-1/2 text-center md:text-left ">
         <img
-          src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
+          src="/assets/images/pawel-czerwinski-dgJT71cXlC4-unsplash-copy-3.jpg"
           alt=""
           className="w-full h-full z-0 object-cover fixed mix-blend-overlay opacity-90"
         />
         <div className="relative z-10 ">
-          <div className="p-32 w-full md:w-1/2">
-            <h1 className="mb-10 text-5xl font-semibold text-amber-900 text-opacity-70">
+          <div className="p-32 w-full md:w-1/2 justify-center">
+            {/* <h1 className="mb-10 text-5xl font-semibold text-amber-900 text-opacity-70">
               Contact
-            </h1>
-            <div className="mb-4 flex flex-col md:flex-row items-center justify-center space-x-2">
+            </h1> */}
+            <div className="mb-4 mt-16 flex flex-col md:flex-row items-center justify-center space-x-2">
               <a
                 href="https://github.com/gdurant34"
                 target="_blank" // Add this line
                 rel="noopener noreferrer" // Also add this line for security reasons
-                className="text-cyan-900 text-opacity-90 mb-4 text-xl font-semibold flex items-center"
+                className="text-white text-opacity-90 mb-4 text-3xl font-semibold flex items-center"
               >
                 <span>Github</span>
                 <svg
@@ -39,7 +39,7 @@ const Contact = ({ title }: { title: string }) => {
                 href="https://www.linkedin.com/in/gracedurant/"
                 target="_blank" // Add this line
                 rel="noopener noreferrer" // Also add this line for security reasons
-                className="text-cyan-900 text-opacity-90 mb-4 text-xl font-semibold flex items-center"
+                className="text-white text-opacity-90 mb-4 text-3xl font-semibold flex items-center"
               >
                 <span>LinkedIn</span>
                 <svg
@@ -57,7 +57,7 @@ const Contact = ({ title }: { title: string }) => {
                 href="https://medium.com/@gdurant34"
                 target="_blank" // Add this line
                 rel="noopener noreferrer" // Also add this line for security reasons
-                className="text-cyan-900 text-opacity-90 mb-4 text-xl font-semibold flex items-center"
+                className="text-white text-opacity-90 mb-4 text-3xl font-semibold flex items-center"
               >
                 <span>Medium</span>
                 <svg
@@ -70,10 +70,11 @@ const Contact = ({ title }: { title: string }) => {
                 </svg>
               </a>
             </div>
-            <div className="mb-6 flex flex-col md:flex-row items-center justify-center space-x-2">
+            
+            <div className="mb-6 flex flex-col md:flex-row items-center justify-center  space-x-2">
               <button
                 type="button"
-                className="rounded border-2 border-cyan-900 text-opacity-90 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-cyan-900 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-teal-500 hover:bg-opacity-10 hover:text-stone-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                className="rounded bg-slate-100 bg-opacity-40  text-opacity-90 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-teal-500 hover:bg-opacity-10 hover:text-stone-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
                 data-te-ripple-init
                 data-te-ripple-color="light"
               >
@@ -81,12 +82,12 @@ const Contact = ({ title }: { title: string }) => {
                   href="mailto:gdurant34@gmail.com"
                   target="_blank" // Add this line
                   rel="noopener noreferrer" // Also add this line for security reasons
-                  className="text-cyan-900 text-opacity-90 font-semibold flex items-center"
+                  className="text-cyan-900 text-opacity-90 font-semibold text-4xl flex items-center"
                 >
                   <span>Email me</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-7 w-7 ml-2"
+                    className="h-16 w-16 ml-2"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                   >
@@ -96,9 +97,10 @@ const Contact = ({ title }: { title: string }) => {
               </button>
             </div>
           </div>
+          
         </div>
-        <p className="text-cyan-900 text-opacity-90 font-semibold flex items-center p-16 text-6xl">
-          Let's have a coffee chat!
+        <p className="text-white text-opacity-90 font-semibold flex items-center p-16 text-8xl">
+          Let's chat!
         </p>
       </div>
 

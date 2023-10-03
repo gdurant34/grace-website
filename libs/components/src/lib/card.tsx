@@ -18,27 +18,36 @@ export const Card = ({
   <div className="p-5 max-w-4xl">
     <div className="w-auto lg:max-w-full lg:flex h-60 overflow-hidden">
       <AspectRatio.Root ratio={16 / 9}>
-        <img
-          className="object-cover h-full w-full lg:rounded-b-none lg:rounded-l"
-          src={image}
-          alt="team collaborating"
-        />
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className="no-underline hover:underline font-2xl"
+        >
+          <img
+            className="object-cover h-full w-full"
+            src={image}
+            alt="team collaborating"
+          />
+        </a>
       </AspectRatio.Root>
-      <div className="bg-cyan-800 bg-opacity-70 lg:rounded-b-none lg:rounded-r p-2 flex flex-col justify-between leading-normal drop-shadow-lg">
+      <div className=" bg-opacity-70 bg-cyan-900 lg:rounded-l-none lg:rounded-xl p-2 flex flex-col justify-between leading-normal drop-shadow-xl">
         <div className="h-32 md:h-24 lg:h-32 lg:p-4">
-          <p className="text-sm text-slate-100 flex items-center ">Medium</p>
-          <div className="text-slate-100 font-bold md:text-xl">
+          <p className="text-sm font-bold text-black flex items-center bg-white bg-opacity-20">
+            Medium
+          </p>
+          <div className="text-white font-bold md:text-xl">
             <a
               href={link}
               target="_blank"
               rel="noreferrer"
-              className="no-underline hover:underline"
+              className="no-underline hover:underline font-2xl"
             >
               {title}
             </a>
           </div>
           <p
-            className={`text-slate-100 text-base ${
+            className={`text-white text-base font-2xl ${
               description ? 'hidden md:block' : ''
             }`}
           >
@@ -46,15 +55,15 @@ export const Card = ({
           </p>
         </div>
         <div className="flex items-center">
-          <div className="text-sm">
+          <div className="text-md pl-4">
             <p
-              className={`text-gray-900 leading-none ${
+              className={`text-gray-900 leading-none font-bold  ${
                 name ? 'hidden md:block' : ''
               }`}
             >
               {name}
             </p>
-            <p className={`text-slate-100 ${date ? 'hidden md:block' : ''}`}>
+            <p className={`text-white ${date ? 'hidden md:block' : ''}`}>
               {date}
             </p>
           </div>

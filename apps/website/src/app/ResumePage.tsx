@@ -1,30 +1,28 @@
 const ResumePage = ({ title }: { title: string }) => {
   return (
-    <div className="h-full flex justify-center pt-10">
+    <div className="h-full flex justify-left">
       <img
-        src="/assets/images/annie-spratt-PM4Vu1B0gxk-unsplash.jpg"
+        src="/assets/images/pawel-czerwinski-dgJT71cXlC4-unsplash-copy-2.jpg"
         alt=""
-        className="w-full h-full object-cover fixed mix-blend-overlay opacity-40"
+        className="w-full h-full object-cover fixed mix-blend-overlay opacity-50"
       />
-      <div className="p-10 max-w-6xl">
-        <div className="inline-block my-6px	ml-55px w-full h-fit p-4">
+      {/* <div className="w-full h-full object-cover fixed mix-blend-overlay opacity-40 m-10 bg-slate-100 z-0" /> */}
+      <div className="pt-12 mb-6 pl-10 max-w-6xl z-10 ">
+        <div className="inline-block my-6px	ml-55px w-full h-fit pt-10 ">
           <br />
-          <h1 className="font-bold text-6xl	text-amber-800 text-opacity-70">
+          <h1 className="font-bold text-6xl	text-cyan-950 opacity-90">
             Grace Durant
           </h1>
           <div className="font-semibold text-lg relative z-10">
             Seattle, WA |
-            <a
-              href="tel:9403123425"
-              className="text-cyan-700 text-opacity-90 underline"
-            >
+            <a href="tel:9403123425" className="text-cyan-900 opacity-90">
               {' '}
               940-312-3425
             </a>{' '}
             |
             <a
               href="mailto:gdurant34@gmail.com"
-              className="text-cyan-700 text-opacity-90 underline"
+              className="text-cyan-900 text-opacity-90 underline"
             >
               {' '}
               gdurant34@gmail.com
@@ -32,7 +30,9 @@ const ResumePage = ({ title }: { title: string }) => {
             |
             <a
               href="https://www.linkedin.com/in/gracedurant/"
-              className="text-cyan-700 text-opacity-90 underline"
+              target="_blank" // Add this line
+              rel="noopener noreferrer" // Also add this line for security reasons
+              className="text-cyan-900 text-opacity-90 underline"
             >
               {' '}
               LinkedIn
@@ -40,7 +40,9 @@ const ResumePage = ({ title }: { title: string }) => {
             |
             <a
               href="https://github.com/gdurant34"
-              className="text-cyan-700 text-opacity-90 underline"
+              target="_blank" // Add this line
+              rel="noopener noreferrer" // Also add this line for security reasons
+              className="text-cyan-900 text-opacity-90 underline"
             >
               {' '}
               Github
@@ -48,11 +50,23 @@ const ResumePage = ({ title }: { title: string }) => {
             |
             <a
               href="https://medium.com/@gdurant34"
-              className="text-cyan-700 text-opacity-90 underline"
+              target="_blank" // Add this line
+              rel="noopener noreferrer" // Also add this line for security reasons
+              className="text-cyan-900 text-opacity-90 underline"
             >
               {' '}
               Blog
             </a>{' '}
+            {/* |
+            <a
+              href="file:///Users/gracedurant/Downloads/Grace%20Durant%20SE%20Resume.pdf"
+              target="_blank" // Add this line
+              rel="noopener noreferrer" // Also add this line for security reasons
+              className="text-rose-900 text-opacity-90 underline"
+            >
+              {' '}
+               Resume in PDF
+            </a>{' '} */}
             {/* |
             <a
               href="https://github.com/gdurant34/Portfolio"
@@ -63,7 +77,7 @@ const ResumePage = ({ title }: { title: string }) => {
             </a> */}
           </div>
           <br />
-          <p>
+          <p text-white>
             Software Engineer delighted to craft seamless web experiences. My
             career has spanned accounting/payroll and software sales. I’ve honed
             my ability to communicate technical requirements, understanding user
@@ -93,13 +107,15 @@ const ResumePage = ({ title }: { title: string }) => {
               <strong>
                 <a
                   href="https://stlswing.dance/"
-                  className="font-bold text-cyan-700 text-opacity-90 underline"
+                  target="_blank" // Add this line
+                  rel="noopener noreferrer" // Also add this line for security reasons
+                  className="font-bold text-cyan-900 text-opacity-90 underline"
                 >
                   STL Swing
-                </a>
-                {' '}- Junior Software Engineer
+                </a>{' '}
+                - Junior Software Engineer
               </strong>
-              , Remote <span className="float-right">01/2023 - Present</span>
+              , Remote <span className="">- (01/2023 - Present)</span>
             </p>
             <ul>
               <li className="list-disc list-inside px-4">
@@ -116,14 +132,16 @@ const ResumePage = ({ title }: { title: string }) => {
             <p className="py-2">
               <strong>
                 <a
-                  href="https://www.softwareadvice.com/"
-                  className="font-bold text-cyan-700 text-opacity-90 underline"
+                  href="https://flatironschool.com/"
+                  target="_blank" // Add this line
+                  rel="noopener noreferrer" // Also add this line for security reasons
+                  className="font-bold text-cyan-900 text-opacity-90 underline"
                 >
                   Flatiron School
-                </a>
-                {' '}- Student
+                </a>{' '}
+                - Student
               </strong>
-              , Remote <span className="float-right">09/2022 - 01/2023</span>
+              , Remote <span className="">- (09/2022 - 01/2023)</span>
             </p>
             <ul>
               <li className="list-disc list-inside px-4">
@@ -151,14 +169,16 @@ const ResumePage = ({ title }: { title: string }) => {
               <strong>
                 <a
                   href="https://www.softwareadvice.com/"
-                  className="font-bold text-cyan-700 text-opacity-90 underline"
+                  target="_blank" // Add this line
+                  rel="noopener noreferrer" // Also add this line for security reasons
+                  className="font-bold text-cyan-900 text-opacity-90 underline"
                 >
-                  Software Advice 
-                </a>
-                {' '}- Software Advisor
+                  Software Advice
+                </a>{' '}
+                - Software Advisor
               </strong>
               , Austin, Texas{' '}
-              <span className="float-right">06/2019 - 09/2022</span>
+              <span className="">- (06/2019 - 09/2022)</span>
             </p>
             <ul>
               <li className="list-disc list-inside px-4">
@@ -171,14 +191,16 @@ const ResumePage = ({ title }: { title: string }) => {
               <strong>
                 <a
                   href="https://improving.com/"
-                  className="font-bold text-cyan-700 text-opacity-90 underline pl-1"
+                  target="_blank" // Add this line
+                  rel="noopener noreferrer" // Also add this line for security reasons
+                  className="font-bold text-cyan-900 text-opacity-90 underline pl-1"
                 >
-                  Improving 
-                </a>
-                {' '}- Accountant
+                  Improving
+                </a>{' '}
+                - Accountant
               </strong>
               , Dallas, Texas{' '}
-              <span className="float-right">04/2016 - 12/2018</span>
+              <span className="">- (04/2016 - 12/2018)</span>
             </p>
             <ul className="list-disc list-inside px-4">
               <li>
@@ -201,7 +223,9 @@ const ResumePage = ({ title }: { title: string }) => {
               <span className="font-semibold">Portfolio/Website</span> -
               <a
                 href="https://github.com/gdurant34/grace-website"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Github
@@ -227,7 +251,9 @@ const ResumePage = ({ title }: { title: string }) => {
               <span className="font-semibold">Friends of Grace</span> -
               <a
                 href="https://github.com/gdurant34/grace-friends"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Github
@@ -235,7 +261,9 @@ const ResumePage = ({ title }: { title: string }) => {
               |
               <a
                 href="https://www.loom.com/share/127378af496242d9911aee70ad63b9f4?sid=a18bbb1f-f139-4825-b724-7b9c0e0137ae"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Demo
@@ -243,7 +271,9 @@ const ResumePage = ({ title }: { title: string }) => {
               |
               <a
                 href="https://friends-kgrn.onrender.com/users/sign_up"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Web App{' '}
@@ -270,7 +300,9 @@ const ResumePage = ({ title }: { title: string }) => {
               <span className="font-semibold">Financial Goals</span> -
               <a
                 href="https://github.com/gdurant34/financial_goals_phase_2_project"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Github
@@ -278,7 +310,9 @@ const ResumePage = ({ title }: { title: string }) => {
               |
               <a
                 href="https://www.youtube.com/watch?v=SM_UWHfj3_8&t=3s"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Demo{' '}
@@ -303,7 +337,9 @@ const ResumePage = ({ title }: { title: string }) => {
               <span className="font-semibold">Movie Social</span> -
               <a
                 href="https://github.com/gdurant34/project-movie-social"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Github Front-end
@@ -311,7 +347,9 @@ const ResumePage = ({ title }: { title: string }) => {
               |
               <a
                 href="https://github.com/gdurant34/phase-3-movie-social"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Github Back-end
@@ -319,7 +357,9 @@ const ResumePage = ({ title }: { title: string }) => {
               |
               <a
                 href="https://www.youtube.com/watch?v=LZ0wNL8z3N4&t=1s"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Demo{' '}
@@ -342,7 +382,9 @@ const ResumePage = ({ title }: { title: string }) => {
               <span className="font-semibold">It’s a Date</span> -
               <a
                 href="https://github.com/gdurant34/phase-5-project-its-a-date"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Github
@@ -350,7 +392,9 @@ const ResumePage = ({ title }: { title: string }) => {
               |
               <a
                 href="https://www.youtube.com/watch?v=SZPFzpYK7As&t=1s"
-                className="text-cyan-700 text-opacity-90 font-bold underline"
+                target="_blank" // Add this line
+                rel="noopener noreferrer" // Also add this line for security reasons
+                className="text-cyan-900 text-opacity-90 font-bold underline"
               >
                 {' '}
                 Demo{' '}
@@ -375,7 +419,9 @@ const ResumePage = ({ title }: { title: string }) => {
           <p className="pt-4 relative z-10">
             <a
               href="https://www.unt.edu/"
-              className="font-bold text-cyan-700 text-opacity-90 pl-1 underline"
+              target="_blank" // Add this line
+              rel="noopener noreferrer" // Also add this line for security reasons
+              className="font-bold text-cyan-900 text-opacity-90 pl-1 underline"
             >
               The University of North Texas
             </a>

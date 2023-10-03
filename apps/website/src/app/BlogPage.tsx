@@ -30,9 +30,12 @@ const Blog = ({ title }: { title: string }) => {
   return (
     <div className="h-full flex justify-center pt-10">
       <img 
-      src='/assets/images/lum3n--RBuQ2PK_L8-unsplash.jpg'
+      src='/assets/images/pawel-czerwinski-dgJT71cXlC4-unsplash-copy.jpg'
       alt=''
       className='w-full h-full object-cover fixed mix-blend-overlay opacity-90'/>
+      {/* <div className='w-full h-full object-cover fixed mix-blend-overlay bg-gray-900 bg-opacity-50'> */}
+
+      {/* </div> */}
       <div> 
         <div className="px-20 py-10">
           {renderArticles()}
