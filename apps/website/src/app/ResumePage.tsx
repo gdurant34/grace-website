@@ -57,24 +57,16 @@ const ResumePage = ({ title }: { title: string }) => {
               {' '}
               Blog
             </a>{' '}
-            {/* |
+            |
             <a
-              href="file:///Users/gracedurant/Downloads/Grace%20Durant%20SE%20Resume.pdf"
-              target="_blank" // Add this line
-              rel="noopener noreferrer" // Also add this line for security reasons
-              className="text-rose-900 text-opacity-90 underline"
+              href="https://www.docdroid.net/OjrImXX/grace-durant-se-resume-pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-900 text-opacity-90 underline"
             >
               {' '}
-               Resume in PDF
-            </a>{' '} */}
-            {/* |
-            <a
-              href="https://github.com/gdurant34/Portfolio"
-              className="text-cyan-700 text-opacity-90"
-            >
-              {' '}
-              Portfolio
-            </a> */}
+              Open Resume in PDF
+            </a>
           </div>
           <br />
           <p text-white>
@@ -177,8 +169,7 @@ const ResumePage = ({ title }: { title: string }) => {
                 </a>{' '}
                 - Software Advisor
               </strong>
-              , Austin, Texas{' '}
-              <span className="">- (06/2019 - 09/2022)</span>
+              , Austin, Texas <span className="">- (06/2019 - 09/2022)</span>
             </p>
             <ul>
               <li className="list-disc list-inside px-4">
@@ -199,8 +190,7 @@ const ResumePage = ({ title }: { title: string }) => {
                 </a>{' '}
                 - Accountant
               </strong>
-              , Dallas, Texas{' '}
-              <span className="">- (04/2016 - 12/2018)</span>
+              , Dallas, Texas <span className="">- (04/2016 - 12/2018)</span>
             </p>
             <ul className="list-disc list-inside px-4">
               <li>
@@ -433,6 +423,7 @@ const ResumePage = ({ title }: { title: string }) => {
               Science in Accounting/Taxation
             </li>
           </ul>
+          
         </div>
         {/* <div className="h-full w-2 bg-blue-200 float-right inherit"></div> */}
         {/* <div className="h-10 w-full p-1 bg-red-700 bg-opacity-60 rounded-md relative clear-both font-mono">
