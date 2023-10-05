@@ -8,7 +8,7 @@ const Contact = ({ title }: { title: string }) => {
         <img
           src="/assets/images/pawel-czerwinski-dgJT71cXlC4-unsplash-copy-3.jpg"
           alt=""
-          className="w-full h-full z-0 object-cover fixed mix-blend-overlay opacity-90"
+          className="w-full h-full object-cover z-0 fixed mix-blend-overlay opacity-90"
         />
         <div className="relative z-10 ">
           <div className="p-32 w-full md:w-1/2 justify-center">
@@ -111,7 +111,7 @@ const Contact = ({ title }: { title: string }) => {
           src="https://calendly.com/gdurant34/30min"
           width="100%"
           height="800px"
-          className="p-5 overflow-auto"
+          className="p-5 overflow-auto z-10 relative"
         ></iframe>
       </div>
     </div>
