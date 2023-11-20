@@ -70,10 +70,12 @@ const ResumePage = ({ title }: { title: string }) => {
           </div>
           <br />
           <p text-white>
-            Software Engineer delighted to craft seamless web experiences. My
-            career has spanned accounting/payroll and software sales. I’ve honed
-            my ability to communicate technical requirements, understanding user
-            needs and work seamlessly alongside diverse teams and individuals.
+            Dedicated and innovative Fullstack Engineer & Developer passionate
+            about crafting seamless and responsive web applications. Commitment
+            to writing clean, efficient code is complemented by a keen eye for
+            design, ensuring user-friendly and visually appealing applications.
+            Eager to contribute skills and enthusiasm to a dynamic team,
+            fostering continuous learning and growth.
           </p>
           <br />
           <p className="">
@@ -82,21 +84,19 @@ const ResumePage = ({ title }: { title: string }) => {
             | HTML5 & CSS3
           </p>
           <p>
-            <span className="h-5 w-full z-1 font-bold">SKILLS: </span>
+            <span className="h-5 w-full z-1 font-bold">COMPETENCIES: </span>
             Tailwind | Recoil | Git | Node | ActiveRecord | Object-Oriented
             Programming | Functional Programming
           </p>
-          <p>
-            <span className="h-5 w-full z-1 font-bold">CERTIFICATIONS: </span>
-            AWS Certified Cloud Practitioner, Flatiron’s Software Engineering
-            Live
-          </p>
           <br />
-          <h4 className="h-5 w-full z-1 pt-4 font-bold">EXPERIENCE</h4>
+          <h4 className="h-5 w-full z-1 pt-4 font-bold">
+            PROFESSIONAL EXPERIENCE
+          </h4>
           <br />
           <div className="relative z-10">
             <p className="py-2">
               <strong>
+                Junior Software Engineer -{' '}
                 <a
                   href="https://stlswing.dance/"
                   target="_blank" // Add this line
@@ -104,25 +104,30 @@ const ResumePage = ({ title }: { title: string }) => {
                   className="font-bold text-cyan-900 text-opacity-90 underline"
                 >
                   STL Swing
-                </a>{' '}
-                - Junior Software Engineer
+                </a>
               </strong>
               , Remote <span className="">- (01/2023 - Present)</span>
             </p>
             <ul>
               <li className="list-disc list-inside px-4">
-                Created admin forms in React with steppers to guide the
-                workflow, and validations for data accuracy
+                Develop admin forms within React by incorporating steppers to
+                guide workflow progression and implementing robust data
+                validations to ensure accuracy and reliability.
               </li>
               <li className="list-disc list-inside px-4">
-                Work independently applying Agile practices to complete tasks
+                Apply Agile practices to execute tasks via demonstrating
+                self-driven approach to project completion and a commitment to
+                iterative development methodologies.
               </li>
               <li className="list-disc list-inside px-4">
-                Leverage Tailwind to streamline the styling process
+                Utilize Tailwind to streamline styling processes enhancing
+                efficiency and ensuring a cohesive visual experience across
+                applications.
               </li>
             </ul>
             <p className="py-2">
               <strong>
+                Student -{' '}
                 <a
                   href="https://flatironschool.com/"
                   target="_blank" // Add this line
@@ -130,35 +135,40 @@ const ResumePage = ({ title }: { title: string }) => {
                   className="font-bold text-cyan-900 text-opacity-90 underline"
                 >
                   Flatiron School
-                </a>{' '}
-                - Student
+                </a>
               </strong>
               , Remote <span className="">- (09/2022 - 01/2023)</span>
             </p>
             <ul>
               <li className="list-disc list-inside px-4">
-                Programmed single-page web applications with React Router for
-                seamless navigation and a better user experience
+                Acquired extensive full-stack experience in programming
+                fundamentals, web frameworks, and multiple languages through
+                hands-on application development.
               </li>
               <li className="list-disc list-inside px-4">
-                Built back-end with CRUD capabilities and validations in Ruby on
-                Rails, increasing data integrity throughout the app
+                Engineered single-page web applications using React Router,
+                ensuring seamless navigation and an optimized user experience.
               </li>
               <li className="list-disc list-inside px-4">
-                Leveraged Chrome/React Devtools and strategic console statements
-                to monitor app state and methodically debug errors
+                Employed Chrome/React Devtools and strategic console statements
+                to vigilantly monitor application state, systematically
+                identifying and resolving 30% of errors during the development
+                process.
               </li>
               <li className="list-disc list-inside px-4">
-                Implemented Semantic-UI React, providing quick solutions for
-                consistent design to expedite development time
+                Implemented Semantic-UI React to achieve consistent and visually
+                appealing design solutions, expediting development time and
+                fostering a cohesive user interface.
               </li>
               <li className="list-disc list-inside px-4">
-                Gained full-stack experience in programming fundamentals, web
-                frameworks, and multiple languages in app development
+                Constructed a robust back-end with CRUD capabilities and
+                validations using Ruby on Rails, significantly enhancing data
+                integrity and overall functionality throughout application.
               </li>
             </ul>
             <p className="py-2">
               <strong>
+                Software Advisor -{' '}
                 <a
                   href="https://www.softwareadvice.com/"
                   target="_blank" // Add this line
@@ -166,20 +176,35 @@ const ResumePage = ({ title }: { title: string }) => {
                   className="font-bold text-cyan-900 text-opacity-90 underline"
                 >
                   Software Advice
-                </a>{' '}
-                - Software Advisor
+                </a>
               </strong>
               , Austin, Texas <span className="">- (06/2019 - 09/2022)</span>
             </p>
             <ul>
               <li className="list-disc list-inside px-4">
-                Regularly achieved top-five ranks for quality B2B communication;
-                outperformed ERP team by 50% in revenue and volume; gathered
-                technical requirements to ensure high-quality recommendations.
+                Facilitated seamless transitions by effectively communicating
+                buyer needs to clients, fostering a smoother and more efficient
+                collaboration process.
+              </li>
+              <li className="list-disc list-inside px-4">
+                Conducted in-depth assessments of buyers' technical requirements
+                ensuring the delivery of optimal recommendations that align with
+                their specific needs and preferences.
+              </li>
+              <li className="list-disc list-inside px-4">
+                Outperformed ERP team by resulting in 50% increase in revenue
+                generated and number of buyers assisted, contributing
+                significantly to the overall project success.
+              </li>
+              <li className="list-disc list-inside px-4">
+                Attained top-five rankings from internal QA via maintaining high
+                standards in B2B communication quality, reflecting commitment to
+                excellence in professional interactions.
               </li>
             </ul>
             <p className="py-2">
               <strong>
+                Accountant -{' '}
                 <a
                   href="https://improving.com/"
                   target="_blank" // Add this line
@@ -187,23 +212,33 @@ const ResumePage = ({ title }: { title: string }) => {
                   className="font-bold text-cyan-900 text-opacity-90 underline pl-1"
                 >
                   Improving
-                </a>{' '}
-                - Accountant
+                </a>
               </strong>
               , Dallas, Texas <span className="">- (04/2016 - 12/2018)</span>
             </p>
             <ul className="list-disc list-inside px-4">
               <li>
-                Collaborated with vendors for full A/P cycle, and sales staff,
-                clients, and consultants for full A/R cycle
+                Engaged with vendors to oversee complete Accounts Payable cycle
+                and collaborated with sales staff, clients, and consultants for
+                a comprehensive management of Accounts Receivable cycle.
               </li>
               <li>
-                Coordinated meetings with engineers to learn about software
-                development practices
+                Facilitated knowledge transfer by coordinating meetings with
+                engineers, gaining insights into software development practices,
+                and ensuring alignment between financial operations and
+                technical aspects.
               </li>
               <li>
-                Applied scrum principles to manage the Columbus, Ohio entity's
-                accounting operations remotely
+                Facilitated knowledge transfer by coordinating meetings with
+                engineers, gaining insights into software development practices,
+                and ensuring alignment between financial operations and
+                technical aspects.
+              </li>
+              <li>
+                Partnered with leadership to lead monthly and yearly financial
+                close processes, and crafted presentations detailing entities'
+                performance, contributing to comprehensive and insightful
+                reporting initiatives.
               </li>
             </ul>
           </div>
@@ -220,21 +255,15 @@ const ResumePage = ({ title }: { title: string }) => {
                 {' '}
                 Github
               </a>{' '}
-              <span className="italic">- My personal website.</span>
             </p>
-            <ul className="list-disc list-inside px-4">
+            <ul className="list-inside px-4">
               <li>
-                Built a scalable codebase utilizing a monorepo setup in order to
-                modularize functionality via library design
-              </li>
-              <li>
-                Created an efficient developer experience by extending
-                best-in-class tooling, component libraries, and frameworks
-              </li>
-              <li>
-                Achieved rapid and continuous deployment with a fully integrated
-                CI/CD workflow to ensure consistent code standards and high
-                software quality
+                Created a scalable React/Typescript codebase utilizing Nx
+                monorepo with modularize functionality for an efficient
+                developer experience by extending best-in-class tooling,
+                component libraries, frameworks, to achieve rapid and continuous
+                deployment with a fully integrated CI/CD workflow to ensure
+                consistent code standards and high software quality.
               </li>
             </ul>
             <p className="pt-4">
@@ -268,22 +297,13 @@ const ResumePage = ({ title }: { title: string }) => {
                 {' '}
                 Web App{' '}
               </a>
-              <span className="italic">
-                - A CRM tool to help a user keep track of friends, and contact
-                information.
-              </span>
             </p>
-            <ul className="list-disc list-inside px-4">
+            <ul className="list-inside px-4">
               <li>
-                Implemented user authentication, registration, and session
-                management utilizing the Devise Gem
-              </li>
-              <li>
-                Executed deployment through Render with PostgreSQL configuration
-              </li>
-              <li>
-                Created a full-stack Ruby/Ruby on Rails app with robust CRUD
-                scaffolding, partials, and associations
+                Developed a user-friendly CRM tool using Ruby on Rails,
+                incorporating features such as user authentication with Devise
+                Gem, Bootstrap for enhanced styling, and comprehensive CRUD
+                scaffolding for management of friend and contact information.
               </li>
             </ul>
             <p className="pt-4">
@@ -307,19 +327,15 @@ const ResumePage = ({ title }: { title: string }) => {
                 {' '}
                 Demo{' '}
               </a>
-              <span className="italic">
-                - An app for informed financial decisions: manage balances,
-                track transactions, and set goals.
-              </span>
             </p>
-            <ul className="list-disc list-inside px-4">
+            <ul className="list-inside px-4">
               <li>
-                Developed a lightweight interactive interface for React to
-                visualize goal progress bar
-              </li>
-              <li>
-                Researched solutions and implemented a 3rd party library to
-                achieve accurate floating-point calculations
+                Crafted a financial decision-making app featuring balance
+                management, transaction tracking, and goal-setting, with
+                highlights including the development of a lightweight
+                interactive interface in React for visualizing goal progress
+                bars and the implementation of a third-party library to ensure
+                precision in floating-point calculations.
               </li>
             </ul>
 
@@ -354,18 +370,15 @@ const ResumePage = ({ title }: { title: string }) => {
                 {' '}
                 Demo{' '}
               </a>
-              <span className="italic">
-                - A movie library app with search, save, rate, and review films.{' '}
-              </span>
             </p>
-            <ul className="list-disc list-inside px-4">
+            <ul className="list-inside px-4">
               <li>
-                Incorporated an extensive RESTful API, enabling efficient
-                partial title searches for a vast movie and TV show database
-              </li>
-              <li>
-                Incorporated full CRUD capabilities in Sinatra back-end to
-                handle data requests resulting in seamless data management
+                Designed and implemented a movie library app with comprehensive
+                search functionality, allowing users to save, rate, and review
+                films, featuring an efficient RESTful API for partial title
+                searches in a vast movie and TV show database, and full CRUD
+                capabilities in the Sinatra back-end for seamless data
+                management.
               </li>
             </ul>
             <p className="pt-4">
@@ -389,41 +402,41 @@ const ResumePage = ({ title }: { title: string }) => {
                 {' '}
                 Demo{' '}
               </a>
-              <span className="italic">
-                - An app for users to create and store fun activities to turn
-                into date nights.{' '}
-              </span>
             </p>
-            <ul className="list-disc list-inside px-4">
+            <ul className="list-inside px-4">
               <li>
-                Boosted React app's stability and scalability by optimizing with
-                Recoil, reducing component dependencies
-              </li>
-              <li>
-                Employed Bcrypt hashing on the back-end and authentication
-                routes on the front-end to ensure user privacy
+                Enhanced a date night planning app by optimizing its React
+                stability and scalability through Recoil, minimizing component
+                dependencies, and prioritizing user privacy by implementing
+                Bcrypt hashing on the back end and incorporating authentication
+                routes on the front end.
               </li>
             </ul>
           </div>
-          <h4 className="h-5 w-full z-1 py-4 font-bold">EDUCATION</h4>
+          <h4 className="h-5 w-full z-1 py-4 font-bold">
+            EDUCATION & CERTIFICATIONS
+          </h4>
           <p className="pt-4 relative z-10">
-            <a
-              href="https://www.unt.edu/"
-              target="_blank" // Add this line
-              rel="noopener noreferrer" // Also add this line for security reasons
-              className="font-bold text-cyan-900 text-opacity-90 pl-1 underline"
-            >
-              The University of North Texas
-            </a>
-            , Denton, Texas
+            <ul className="list-inside px-4">
+              <li>
+                <span className='font-bold'>AWS Certified Cloud Practitioner, </span>
+                Flatiron's Software Engineering Live, 2023
+              </li>
+              <li  className='font-bold'>
+                Bachelor of Science, Masters of Science in Accounting &
+                Taxation,
+                <a
+                  href="https://www.unt.edu/"
+                  target="_blank" // Add this line
+                  rel="noopener noreferrer" // Also add this line for security reasons
+                  className=" text-cyan-900 text-opacity-90 pl-1 underline"
+                >
+                  The University of North Texas
+                </a>
+                , 2016
+              </li>
+            </ul>
           </p>
-          <ul className="list-disc list-inside px-4">
-            <li>
-              Integrated Accounting Program: Bachelor of Science, Masters of
-              Science in Accounting/Taxation
-            </li>
-          </ul>
-          
         </div>
         {/* <div className="h-full w-2 bg-blue-200 float-right inherit"></div> */}
         {/* <div className="h-10 w-full p-1 bg-red-700 bg-opacity-60 rounded-md relative clear-both font-mono">
