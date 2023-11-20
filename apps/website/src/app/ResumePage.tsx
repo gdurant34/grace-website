@@ -79,17 +79,17 @@ const ResumePage = ({ title }: { title: string }) => {
           </p>
           <br />
           <p className="">
-            <span className="h-5 w-full z-1  font-bold">TECHNOLOGY: </span>
+            <span className="h-5 w-full z-1 text-cyan-900 text-opacity-90 font-bold">TECHNOLOGY: </span>
             React | JavaScript | Typescript | PostgreSQL | Ruby | Ruby on Rails
             | HTML5 & CSS3
           </p>
           <p>
-            <span className="h-5 w-full z-1 font-bold">COMPETENCIES: </span>
+            <span className="h-5 w-full z-1 text-cyan-900 text-opacity-90 font-bold">COMPETENCIES: </span>
             Tailwind | Recoil | Git | Node | ActiveRecord | Object-Oriented
             Programming | Functional Programming
           </p>
           <br />
-          <h4 className="h-5 w-full z-1 pt-4 font-bold">
+          <h4 className="h-5 w-full z-1 text-cyan-900 text-opacity-90 pt-4 font-bold">
             PROFESSIONAL EXPERIENCE
           </h4>
           <br />
@@ -242,7 +242,7 @@ const ResumePage = ({ title }: { title: string }) => {
               </li>
             </ul>
           </div>
-          <h4 className="h-5 w-full z-1 py-4 font-bold">TECHNICAL PROJECTS</h4>
+          <h4 className="h-5 w-full z-1 py-4 text-cyan-900 text-opacity-90 font-bold">TECHNICAL PROJECTS</h4>
           <div className="relative z-10">
             <p className="pt-4">
               <span className="font-semibold">Portfolio/Website</span> -
@@ -413,7 +413,7 @@ const ResumePage = ({ title }: { title: string }) => {
               </li>
             </ul>
           </div>
-          <h4 className="h-5 w-full z-1 py-4 font-bold">
+          <h4 className="h-5 w-full z-1 py-4 text-cyan-900 text-opacity-90 font-bold">
             EDUCATION & CERTIFICATIONS
           </h4>
           <p className="pt-4 relative z-10">
