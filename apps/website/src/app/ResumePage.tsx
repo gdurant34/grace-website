@@ -14,8 +14,9 @@ const ResumePage = ({ title }: { title: string }) => {
             Grace Durant
           </h1>
           <div className="font-semibold text-lg relative z-10">
-            Seattle, WA |
-            <a href="tel:9403123425" className="text-cyan-900 opacity-90">
+            Seattle, WA 
+            {/* | */}
+            {/* <a href="tel:9403123425" className="text-cyan-900 opacity-90">
               {' '}
               940-312-3425
             </a>{' '}
@@ -36,9 +37,9 @@ const ResumePage = ({ title }: { title: string }) => {
             >
               {' '}
               LinkedIn
-            </a>{' '}
-            |
-            <a
+            </a>{' '} */}
+            {/* | */}
+            {/* <a
               href="https://github.com/gdurant34"
               target="_blank" // Add this line
               rel="noopener noreferrer" // Also add this line for security reasons
@@ -47,8 +48,8 @@ const ResumePage = ({ title }: { title: string }) => {
               {' '}
               Github
             </a>{' '}
-            |
-            <a
+            | */}
+            {/* <a
               href="https://medium.com/@gdurant34"
               target="_blank" // Add this line
               rel="noopener noreferrer" // Also add this line for security reasons
@@ -57,8 +58,8 @@ const ResumePage = ({ title }: { title: string }) => {
               {' '}
               Blog
             </a>{' '}
-            |
-            <a
+            | */}
+            {/* <a
               href="https://www.docdroid.net/OjrImXX/grace-durant-se-resume-pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,7 +67,7 @@ const ResumePage = ({ title }: { title: string }) => {
             >
               {' '}
               Open Resume in PDF
-            </a>
+            </a> */}
           </div>
           <br />
           <p text-white>
@@ -85,8 +86,8 @@ const ResumePage = ({ title }: { title: string }) => {
           </p>
           <p>
             <span className="h-5 w-full z-1 text-cyan-900 text-opacity-90 font-bold">COMPETENCIES: </span>
-            Tailwind | Recoil | Git | Node | ActiveRecord | Object-Oriented
-            Programming | Functional Programming
+            Tailwind | WordPress | Git | Node | ActiveRecord | Object-Oriented
+            Programming | Functional Programming | Recoil
           </p>
           <br />
           <h4 className="h-5 w-full z-1 text-cyan-900 text-opacity-90 pt-4 font-bold">

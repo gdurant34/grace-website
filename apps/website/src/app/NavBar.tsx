@@ -252,7 +252,7 @@ export default function NavBar() {
                 >
                   <span className="group-hover:text-gray-700">Projects</span>
                 </Link>
-                <Link
+                {/* <Link
                   to="/blog"
                   className={
                     location.pathname === '/blog' ? activeClass : inactiveClass
@@ -269,7 +269,7 @@ export default function NavBar() {
                   }
                 >
                   <span className="group-hover:text-gray-700">Contact</span>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
